@@ -1,17 +1,33 @@
-<h2>Student Challan Entry</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Challan System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<input type="text" id="name" placeholder="Student Name"><br><br>
-<input type="text" id="roll" placeholder="Roll Number"><br><br>
+<h1>College Challan System</h1>
 
-<select id="mode">
-    <option>Cash</option>
-    <option>UPI</option>
-    <option>Card</option>
-</select><br><br>
+<div class="form-container">
+    <input type="text" id="name" placeholder="Student Name"><br><br>
+    <input type="text" id="roll" placeholder="Roll Number"><br><br>
 
-<input type="text" id="purpose" placeholder="Purpose (fees, fine...)"><br><br>
+    <select id="mode">
+        <option>Cash</option>
+        <option>UPI</option>
+        <option>Card</option>
+    </select><br><br>
 
-<button onclick="saveData()">Submit</button>
+    <input type="text" id="purpose" placeholder="Purpose (fees, fine...)"><br><br>
 
-<br><br>
-<button onclick="viewHistory()">View History</button>
+    <button onclick="saveData()">Submit</button>
+    <button onclick="viewHistory()">View History</button>
+</div>
+
+<h2>History</h2>
+<div id="history"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
